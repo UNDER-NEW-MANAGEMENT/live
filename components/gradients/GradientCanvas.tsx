@@ -9,7 +9,7 @@ interface IGradientCanvasProps {
 
 export default function GradientCanvas(props: IGradientCanvasProps) {
   useEffect(() => {
-    const gradient = new Gradient();
+    const gradient: Record<string, any> = new Gradient();
     gradient.initGradient("#gradient-canvas");
   }, []);
 
